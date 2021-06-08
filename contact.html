@@ -6,7 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        input,
+        label {
+            display: block;
+        }
+
+        form {
+            width: 60%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 
 <body>
     <h1>Contact Us</h1>
@@ -14,6 +26,25 @@
     <form action="">
         <fieldset>
             <legend>Your personal information</legend>
+            <label for="name">Full Name (required)
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            </label>
+            <label for="email">Email (required)
+                <input type="email">
+            </label>
+            <label for="tel">Telephone (optional)
+                <input type="tel" name="tel" id="tel" placeholder="+381-6x-xxx-xxxx">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell us about pizza</legend>
+            <label for="awful">Awful
+                <input type="radio" id="awful" name="taste" value="awful">
+            </label>
+            <label for="pretty">Pretty damn good!
+                <input type="radio" id="pretty" name="taste" value="awful">
+            </label>
         </fieldset>
     </form>
 </body>
