@@ -2,11 +2,26 @@
 <html lang="en">
 
 <head>
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
+        body {
+            font-family: sans-serif;
+            font-size: .875rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 80%;
+        }
+
         input,
         label {
             display: block;
@@ -21,9 +36,11 @@
 
 
 <body>
-    <h1>Contact Us</h1>
-    <h2>Please fill out this form in order to find out more about you.</h2>
-    <form action="">
+    <header class="container">
+        <h1>Contact Us</h1>
+        <h2>Please fill out this form in order to find out more about you.</h2>
+    </header>
+    <form action="" class="container">
         <fieldset>
             <legend>Your personal information</legend>
             <label for="name">Full Name (required)
